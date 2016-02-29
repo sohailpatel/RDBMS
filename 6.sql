@@ -1,0 +1,2 @@
+ select orders.id,orders.orderdate,products.name,products.price,orders.cost,(select userdetails.name from userdetails where userdetails.id in (products.selleris)) as UserName,(select userdetails.email from userdetails where userdetails.id in (products.selleris))as Email from orders inner join products on orders.productid=products.id WHERE orders.orderdate BETWEEN NOW() - INTERVAL 30 DAY AND NOW() group by products.selleris;
+
