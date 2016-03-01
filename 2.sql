@@ -4,7 +4,7 @@
  insert into userid(password,type) values("123456789",1);
 insert into userid(password,type) values("123456789",1);
 
- insert into userdetalis values(1,"abc","abc@gmail.com");
+ insert into userdetails values(1,"abc","abc@gmail.com");
   insert into userdetails values(2,"pqr","pqr@gmail.com");
   insert into userdetails values(3,"xyz","xyz@gmail.com");
   insert into userdetails values(4,"def","def@gmail.com");
