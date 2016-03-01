@@ -16,5 +16,5 @@ create table products(id int primary key,price float,selleris ,colorid int,forei
 
  
 
-create table orders(id int primary key,productid int,quantity int,cost float,orderdate date,foreign key(productid) references products(id));
+create table orders(id int,productid int,quantity int,cost float,orderdate date,orderby int,foreign key(productid) references products(id));
   
