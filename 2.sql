@@ -8,6 +8,8 @@ insert into userid(password,type) values("123456789",1);
   insert into userdetails values(2,"pqr","pqr@gmail.com");
   insert into userdetails values(3,"xyz","xyz@gmail.com");
   insert into userdetails values(4,"def","def@gmail.com");
+insert into userdetails values(5,"qef","qef@gmail.com");
+
 
  insert into type values(2,"buyer");
  insert into type values(1,"seller");
