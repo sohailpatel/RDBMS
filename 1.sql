@@ -9,7 +9,7 @@ create table type(id int,typeis varchar(10));
 
 create table products(id int primary key,price float,selleris int,colorid int,foreign key(selleris) references userid(id));
 
-
+create table colorname(colorid int,colorname varchar(50));
 
  create table productname(id int,name varchar(50),foreign key(id) references products(id));
 
