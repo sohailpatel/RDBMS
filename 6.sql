@@ -1,2 +1,2 @@
+create or replace view montly_details as
 select orders.id,orders.orderdate,(select name from productname where id in(products.id)) as Product_NAme,products.price,orders.cost,(select userdetails.name from userdetails where userdetails.id in (orders.orderby)) as UserName,(select userdetails.email from userdetails where userdetails.id in (orders.orderby))as Email from orders inner join products on orders.productid=products.id where orders.orderdate BETWEEN NOW() - INTERVAL 30 DAY AND NOW() group by orders.id;
-
